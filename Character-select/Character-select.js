@@ -2,7 +2,6 @@ import { checkAuth, getCharacters, logout } from '../fetch-utils.js';
 import { renderCard } from '../render-utils.js';
 
 const characterContainer = document.querySelector('.character-select');
-
 checkAuth();
 
 const logoutButton = document.getElementById('logout');
@@ -16,6 +15,7 @@ async function displayCharacters() {
 
     for (let character of data) {
         const newDiv = renderCard(character);
+    
         newDiv.addEventListener('click', () => {
             //finish later
         });
@@ -24,3 +24,4 @@ async function displayCharacters() {
 }
 
 displayCharacters();
+
