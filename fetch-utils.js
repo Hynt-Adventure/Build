@@ -37,6 +37,12 @@ export async function logout() {
     return (window.location.href = '../');
 }
 
-// function checkError({ data, error }) {
-//     return error ? console.error(error) : data;
-// }
+export async function getCharacters() {
+    const response = await client.from('characters').select('*');
+
+    return checkError(response);
+}
+
+function checkError({ data, error }) {
+    return error ? console.error(error) : data;
+}
