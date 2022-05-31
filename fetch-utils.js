@@ -1,5 +1,5 @@
-const SUPABASE_URL = '';
-const SUPABASE_KEY = '';
+const SUPABASE_URL = 'https://hdstylaggwivnddufiyv.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhkc3R5bGFnZ3dpdm5kZHVmaXl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTM2OTI4MzAsImV4cCI6MTk2OTI2ODgzMH0.pTPAAOVv6yWdNxYG38icrBAqxVNH8c1TFl9WPdEaT6c';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -15,7 +15,7 @@ export function checkAuth() {
 
 export function redirectIfLoggedIn() {
     if (getUser()) {
-        location.replace('./other-page');
+        location.replace('./Character-select');
     }
 }
 
