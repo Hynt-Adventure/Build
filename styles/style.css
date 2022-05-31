@@ -47,7 +47,7 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -88,7 +88,7 @@ footer {
   
   @keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -119,6 +119,7 @@ footer {
 
 .auth-container {
     margin: 10px;
+    border: 2px solid black;
 }
 
 .auth-container form {
