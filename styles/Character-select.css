@@ -11,3 +11,12 @@ input[type="radio"] {
 input[type="radio"]:checked + img {
     border: 5px solid black;
 }
+
+.character-select {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    border-radius: 80px;
+}
