@@ -15,3 +15,9 @@ body {
     flex-direction: row;
     margin-top: 8%;
 }
+
+section button {
+    margin: 5px;
+    height: fit-content;
+    align-self: center;
+}
