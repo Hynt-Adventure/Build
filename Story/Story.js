@@ -9,3 +9,4 @@ choice1.addEventListener('click', () => {
 choice2.addEventListener('click', () => {
     location.replace('../END');
 });
+

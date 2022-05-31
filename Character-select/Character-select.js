@@ -5,6 +5,7 @@ const characterContainer = document.querySelector('.character-select');
 checkAuth();
 
 const logoutButton = document.getElementById('logout');
+const startButton = document.getElementById('start');
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -25,3 +26,7 @@ async function displayCharacters() {
 
 displayCharacters();
 
+startButton.addEventListener('click', () => {
+    const selected = document.querySelector('input[type="radio"]:checked');
+    window.location.replace(`../Story/index.html?id=${selected.value}`);
+});
