@@ -49,8 +49,12 @@ header {
     display: flex;
     flex-direction: column;
     background-color: var(--color3);
-    height: var(--header-height);
+    height: fit-content;
     box-shadow: var(--shadow);
+}
+
+.header {
+    align-self: center;
 }
 
 h2 {
