@@ -46,3 +46,8 @@ export async function getCharacters() {
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
+
+export async function getChar(id) {
+    const response = await client.from('characters').select('*').match({ id: id }).single();
+    return checkError(response);
+}
