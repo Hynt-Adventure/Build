@@ -16,7 +16,6 @@ choice2.addEventListener('click', () => {
 async function displayChar() {
     const params = new URLSearchParams(window.location.search);
     const stuff = await getChar(params.get('id'));
-    console.log(stuff);
     const div = renderChar(stuff);
     charSection.append(div);
 }
