@@ -16,10 +16,6 @@ async function displayCharacters() {
 
     for (let character of data) {
         const newDiv = renderCard(character);
-    
-        newDiv.addEventListener('click', () => {
-            //finish later
-        });
         characterContainer.append(newDiv);
     }
 }
