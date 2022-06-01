@@ -148,6 +148,13 @@ footer {
     margin: 10px;
 }
 
+
+@keyframes flash {
+    1% { background: yellow; width: 100%;}
+}
+
+
+
 input {
     height: 30px;
     width: 300px;
@@ -174,3 +181,4 @@ button{
     height: 30px;
     width: 150px;
 }
+
