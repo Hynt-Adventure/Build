@@ -16,13 +16,11 @@ export function renderCard(character) {
     h2.textContent = character.name;
     img.src = character.image;
     p.textContent = character.bio;
-    cardDiv.append(h2, img, p, radioBtn);
+    cardDiv.append(h2, radioBtn, img, p);
     label.append(cardDiv);
     cardDiv.classList.add('card');
 
     return label;
-    //wait until we have more information
-
 }
 
 export function renderChar(character) {
@@ -56,13 +54,18 @@ export function renderStory(story) {
     button2.value = story.option2_id;
     button1.textContent = 'Choose';
     button2.textContent = 'Choose';
+
     button1.addEventListener('click', async () => {
-        const stuff = await getStory(button1.value);
-        renderStory(stuff);
+        setTimeout(async () => {
+            const stuff = await getStory(button1.value);
+            renderStory(stuff);
+        }), 1250;
     });
     button2.addEventListener('click', async () => {
-        const stuff = await getStory(button2.value);
-        renderStory(stuff);
+        setTimeout(async () => {
+            const stuff = await getStory(button2.value);
+            renderStory(stuff);
+        }), 1250;
     });
 
     h2.textContent = state;
