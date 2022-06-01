@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Tangerine:wght@700&display=swap');
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -20,7 +21,7 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-    background-image: url('https://thumbs.dreamstime.com/b/old-paper-background-red-blood-splash-18956040.jpg');
+    background-image: url('https://patch.com/img/cdn20/users/24511518/20210926/010223/mysterymansion___26130220399.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -54,16 +55,22 @@ header {
     background-color: var(--color3);
     height: fit-content;
     box-shadow: var(--shadow);
-    font-family: 'Tangerine', cursive;
     background-color: rgba(240, 248, 255, 0.449);
 }
 
 .header {
+    font-family: 'Rubik Wet Paint', cursive;
     position: relative;
     animation: slide;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     font-size: 65px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
 }
 .header2 {
     display: flex;
