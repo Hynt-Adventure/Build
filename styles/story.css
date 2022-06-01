@@ -55,10 +55,12 @@ section button {
 
 img {
     border-radius: 40px;
+    align-self: baseline;
 }
 
 h2 {
-    text-align: center;
+    align-self: flex-start;
+    margin-left: 50px;
 }
 
 .story {
