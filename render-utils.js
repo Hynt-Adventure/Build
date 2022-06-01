@@ -39,6 +39,7 @@ export function renderStory(story) {
     const storySec = document.querySelector('.story');
     const div_1 = document.getElementById('div-1');
     const div_2 = document.getElementById('div-2');
+    const body = document.getElementById('body');
     storySec.textContent = '';
     div_1.textContent = '';
     div_2.textContent = '';
@@ -48,6 +49,7 @@ export function renderStory(story) {
     const h2 = document.createElement('h2');
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
+    body.style.backgroundImage = `url(../assets/${story.background_img})`;
     const button1 = document.createElement('button');
     const button2 = document.createElement('button');
     button1.value = story.option1_id;
