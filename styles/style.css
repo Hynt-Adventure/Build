@@ -139,3 +139,9 @@ footer {
 .auth-container button {
     margin: 10px;
 }
+
+@keyframes flash {
+    1% { background: yellow; width: 100%;}
+}
+
+

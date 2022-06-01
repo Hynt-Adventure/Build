@@ -14,10 +14,16 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 8%;
+    position: relative;
 }
 
 section button {
     margin: 5px;
     height: fit-content;
     align-self: center;
+    position: relative;
+}
+
+@keyframes flash {
+    0% { background: yellow; width: 100%;}
 }
