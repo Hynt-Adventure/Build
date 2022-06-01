@@ -1,5 +1,8 @@
+
 import { getChar, getStory } from '../fetch-utils.js';
 import { renderChar, renderStory } from '../render-utils.js';
+
+
 
 
 const charSection = document.getElementById('char-section');
@@ -18,3 +21,11 @@ window.addEventListener('load', async () => {
     renderStory(init);
 });
 
+async function displayChar() {
+    const params = new URLSearchParams(window.location.search);
+    const stuff = await getChar(params.get('id'));
+    const div = renderChar(stuff);
+    charSection.append(div);
+}
+
+displayChar();
