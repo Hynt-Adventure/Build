@@ -54,6 +54,7 @@ export function renderStory(story) {
     button2.value = story.option2_id;
     button1.textContent = 'Choose';
     button2.textContent = 'Choose';
+    
     button1.addEventListener('click', async () => {
         setTimeout(async () => {
             const stuff = await getStory(button1.value);
