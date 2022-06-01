@@ -1,5 +1,8 @@
+
 import { getChar, getStory } from '../fetch-utils.js';
 import { renderChar, renderStory } from '../render-utils.js';
+
+
 
 
 const charSection = document.getElementById('char-section');
@@ -17,4 +20,3 @@ window.addEventListener('load', async () => {
     const init = await getStory(1);
     renderStory(init);
 });
-
