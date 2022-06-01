@@ -15,7 +15,7 @@ export function renderCard(character) {
     h2.textContent = character.name;
     img.src = character.image;
     p.textContent = character.bio;
-    cardDiv.append(h2, img, p, radioBtn);
+    cardDiv.append(h2, p, radioBtn, img);
     label.append(cardDiv);
     cardDiv.classList.add('card');
 
