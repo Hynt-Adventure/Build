@@ -49,8 +49,6 @@ section button {
 
 @keyframes flash {
     0% { background: yellow; width: 100%;}
-
-    align-self: flex-end;
 }
 
 img {
