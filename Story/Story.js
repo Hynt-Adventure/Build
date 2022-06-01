@@ -1,17 +1,8 @@
-import { getChar } from '../fetch-utils.js';
-import { renderChar } from '../render-utils.js';
+import { getChar, getStory } from '../fetch-utils.js';
+import { renderChar, renderStory } from '../render-utils.js';
 
-const choice1 = document.getElementById('choice-1');
-const choice2 = document.getElementById('choice-2');
+
 const charSection = document.getElementById('char-section');
-
-choice1.addEventListener('click', () => {
-    location.replace('../END');
-});
-
-choice2.addEventListener('click', () => {
-    location.replace('../END');
-});
 
 async function displayChar() {
     const params = new URLSearchParams(window.location.search);
@@ -20,4 +11,10 @@ async function displayChar() {
     charSection.append(div);
 }
 
-displayChar();
+
+window.addEventListener('load', async () => {
+    displayChar();
+    const init = await getStory(1);
+    renderStory(init);
+});
+
