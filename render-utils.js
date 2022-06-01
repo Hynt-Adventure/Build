@@ -57,10 +57,10 @@ export function renderStory(story) {
     button1.addEventListener('click', async () => {
         setTimeout(async () => {
             const stuff = await getStory(button1.value);
-            if (button1.value === 30) {
+            if (button1.value === '30') {
                 renderWin();
             }
-            else if (button1.value === 32) {
+            else if (button1.value === '32') {
                 button1.disabled = true;
                 renderDead();
                 alert('hello');
