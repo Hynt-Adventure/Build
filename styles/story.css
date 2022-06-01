@@ -9,6 +9,10 @@ body {
 .choice {
     display: flex;
     flex-direction: row;
+
+    margin-top: 8%;
+    position: relative;
+
     width: fit-content;
 }
 
@@ -33,12 +37,20 @@ div {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
     align-self: flex-start;
+
 }
 
 section button {
     margin: 5px;
     height: fit-content;
     align-self: center;
+
+}
+
+@keyframes flash {
+    0% { background: yellow; width: 100%;}
+
+    align-self: flex-end;
 }
 
 img {
@@ -55,6 +67,7 @@ h2 {
     padding: 10px;
     grid-column: 1 / 3;
     justify-self: center;
+
 }
 
 #div-1 {

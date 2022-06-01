@@ -58,6 +58,14 @@ export function renderStory(story) {
     button1.addEventListener('click', async () => {
         setTimeout(async () => {
             const stuff = await getStory(button1.value);
+            if (button1.value === '30') {
+                renderWin();
+            }
+            else if (button1.value === '32') {
+                button1.disabled = true;
+                renderDead();
+                alert('hello');
+            }
             renderStory(stuff);
         }), 1250;
     });
@@ -76,4 +84,22 @@ export function renderStory(story) {
     div_2.append(p2, button2);
 
 }
+
+function renderWin() {
+    const body = document.getElementById('body');
+    body.textContent = '';
+    const h1 = document.createElement('h1');
+    h1.textContent = 'you win!';
+    body.style.backgroundImage = 'url(../assets/sunrise.jpg)';   
+    body.append(h1);
+} 
+
+function renderDead() {
+    const body = document.getElementById('body');
+    body.textContent = '';
+    const h1 = document.createElement('h1');
+    h1.textContent = 'you die!';
+    body.style.backgroundImage = 'url(../assets/lose.jpg)';   
+    body.append(h1);
+} 
 
