@@ -18,7 +18,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + img {
-    border: 5px solid black;
+    border: 5px solid rgb(84, 199, 31);
 }
 
 .character-select {
