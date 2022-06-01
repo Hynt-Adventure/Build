@@ -16,7 +16,7 @@ export function renderCard(character) {
     h2.textContent = character.name;
     img.src = character.image;
     p.textContent = character.bio;
-    cardDiv.append(radioBtn, h2, img, p);
+    cardDiv.append(h2, radioBtn, img, p);
     label.append(cardDiv);
     cardDiv.classList.add('card');
 
@@ -54,6 +54,7 @@ export function renderStory(story) {
     button2.value = story.option2_id;
     button1.textContent = 'Choose';
     button2.textContent = 'Choose';
+
     button1.addEventListener('click', async () => {
         setTimeout(async () => {
             const stuff = await getStory(button1.value);
