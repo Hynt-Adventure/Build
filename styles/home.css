@@ -1,1 +1,4 @@
 /* add home page styles here */
+@keyframes flash {
+    1% { background: yellow; width: 100%;}
+}

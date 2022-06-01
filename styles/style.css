@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Rubik+Wet+Paint&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Tangerine:wght@700&display=swap');
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -19,7 +19,7 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
     background-color: var(--color2);
     background-image: url('https://patch.com/img/cdn20/users/24511518/20210926/010223/mysterymansion___26130220399.jpg');
     background-repeat: no-repeat;
@@ -31,7 +31,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 180px;
     margin-bottom: calc(var(--footer-height));
+    background-color: rgba(240, 248, 255, 0.449);
+    font-size: 30px;
+    height: 400px;
 }
 
 section {
@@ -53,7 +57,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: var(--color3);
-    height: fit-content;
+    height: 150px;
     box-shadow: var(--shadow);
     background-color: rgba(240, 248, 255, 0.449);
 }
@@ -75,6 +79,9 @@ header {
 .header2 {
     display: flex;
     justify-content: center;
+    font-size: 30px;
+    margin: 0px;
+    color: black;
 }
 
 h2 {
@@ -97,7 +104,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -111,7 +118,7 @@ footer {
 
 @keyframes slide {
     0%   {top: 0px; left: 0%}
-    100% {top: 0px; left: 100%}
+    100% {top: 0px; left: 80%}
 }
 
 #logout {
@@ -128,14 +135,51 @@ footer {
 
 .auth-container {
     margin: 10px;
-    border: 2px solid black;
 }
 
 .auth-container form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 60px;
 }
 
 .auth-container button {
     margin: 10px;
 }
+
+
+@keyframes flash {
+    1% { background: yellow; width: 100%;}
+}
+
+
+
+input {
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+}
+
+h3 {
+    margin: 15px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#sign-in {
+    border: 5px ridge grey;
+    padding: 10px;
+}
+
+#sign-up {
+    border: 5px ridge grey;
+    padding: 10px;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+}
+
+
