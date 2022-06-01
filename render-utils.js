@@ -36,6 +36,7 @@ export function renderChar(character) {
     div.append(img, h2);
     return div;
 }
+
 export function renderStory(story) {
     const storySec = document.querySelector('.story');
     const div_1 = document.getElementById('div-1');
@@ -72,3 +73,4 @@ export function renderStory(story) {
     div_2.append(p2, button2);
 
 }
+
