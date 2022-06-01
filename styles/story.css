@@ -21,3 +21,33 @@ section button {
     height: fit-content;
     align-self: center;
 }
+
+img {
+    border-radius: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.story {
+    border: 5px ridge gray;
+    width: 40%;
+    padding: 10px;
+}
+
+#div-1 {
+    background-color: rgba(128, 0, 0, 0.827);
+    border-radius: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#div-2 {
+    background-color: rgba(128, 0, 0, 0.819);
+    border-radius: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+}
