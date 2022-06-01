@@ -20,12 +20,3 @@ window.addEventListener('load', async () => {
     const init = await getStory(1);
     renderStory(init);
 });
-
-async function displayChar() {
-    const params = new URLSearchParams(window.location.search);
-    const stuff = await getChar(params.get('id'));
-    const div = renderChar(stuff);
-    charSection.append(div);
-}
-
-displayChar();
