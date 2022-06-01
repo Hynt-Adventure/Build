@@ -23,3 +23,16 @@ export function renderCard(character) {
     //wait until we have more information
 
 }
+
+export function renderChar(character) {
+    const div = document.createElement('div');
+    const img = document.createElement('img');
+    const h2 = document.createElement('h2');
+
+    img.src = `${character.image}`;
+    h2.textContent = character.name;
+    
+    div.append(img, h2);
+    return div;
+}
+
