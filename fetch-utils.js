@@ -55,5 +55,4 @@ export async function getChar(id) {
 export async function getStory(id) {
     const response = await client.from('dyn_pages').select('*').match({ id: id }).single();
     return checkError(response);
-
 }
