@@ -5,12 +5,14 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: fit-content fit-content 1fr 1fr;
     align-items: center;
+    align-content: center;
     background-repeat: no-repeat;
     background-size: 80%; 
     background-position: center;
     background-color: rgb(95, 88, 88);
     height: 70em;
     font-family: 'Nanum Gothic Coding', monospace;
+    justify-items: center;
 }
 
 
@@ -151,11 +153,8 @@ h1 {
 
 .credits {
     width: 200px;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    justify-self: end;
+    grid-column: 1 / 3;
     align-self: flex-start;
-    position: relative;
     margin-top: 10px;
     font-size: 35px;
     background-color: rgba(128, 0, 0, 0.885);
