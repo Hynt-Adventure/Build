@@ -43,6 +43,7 @@ export function renderStory(story) {
     storySec.textContent = '';
     div_1.textContent = '';
     div_2.textContent = '';
+    div_2.classList.remove('hidden');
     const state = story.state_description;
     const opt_1 = story.option_1_desc;
     const opt_2 = story.option_2_desc;
@@ -56,6 +57,9 @@ export function renderStory(story) {
     button2.value = story.option2_id;
     button1.textContent = 'Choose';
     button2.textContent = 'Choose';
+    if (button2.value === 'null' || '') {
+        div_2.classList.add('hidden');
+    }
 
     button1.addEventListener('click', async () => {
         setTimeout(async () => {
@@ -66,7 +70,6 @@ export function renderStory(story) {
             else if (button1.value === '32') {
                 button1.disabled = true;
                 renderDead();
-                alert('hello');
             }
             renderStory(stuff);
         }), 1250;
@@ -74,7 +77,16 @@ export function renderStory(story) {
     button2.addEventListener('click', async () => {
         setTimeout(async () => {
             const stuff = await getStory(button2.value);
+            if (button2.value === '30') {
+                renderWin();
+            }
+            else if (button2.value === '32') {
+                button2.disabled = true;
+                renderDead();
+            }
+            
             renderStory(stuff);
+            
         }), 1250;
     });
 
