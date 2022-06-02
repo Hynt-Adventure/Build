@@ -5,7 +5,7 @@
     margin: 5px;
     font-size: 25px;
     background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
-    -webkit-text-fill-color: white;    
+    -webkit-text-fill-color: whitesmoke;    
     position: relative;
     animation-name: bounce;
     animation-iteration-count: infinite;
@@ -101,4 +101,11 @@ body {
 
 .details {
     padding-top: 45px;
+}
+
+#thanks {
+    position: sticky;
+    font-size: 24px;
+    color: black;
+    width: fit-content;
 }
