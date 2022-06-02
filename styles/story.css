@@ -3,6 +3,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: fit-content fit-content 1fr 1fr;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 
@@ -53,10 +55,12 @@ section button {
 
 img {
     border-radius: 40px;
+    align-self: baseline;
 }
 
 h2 {
-    text-align: center;
+    align-self: flex-start;
+    margin-left: 50px;
 }
 
 .story {
@@ -97,4 +101,8 @@ header {
 
 .story {
     grid-column: 1 / 3;
+}
+
+.hidden {
+    display: none;
 }
