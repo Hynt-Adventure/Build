@@ -103,7 +103,8 @@ function renderWin() {
     const body = document.getElementById('body');
     body.textContent = '';
     const h1 = document.createElement('h1');
-    h1.textContent = 'you win!';
+    h1.classList.add('results');
+    h1.textContent = 'You Win💰';
     body.style.backgroundImage = 'url(../assets/sunrise.jpg)';   
     body.append(h1);
 } 
@@ -112,7 +113,8 @@ function renderDead() {
     const body = document.getElementById('body');
     body.textContent = '';
     const h1 = document.createElement('h1');
-    h1.textContent = 'you die!';
+    h1.textContent = 'You Died☠️';
+    h1.classList.add('results');
     body.style.backgroundImage = 'url(../assets/lose.jpg)';   
     body.append(h1);
 } 
