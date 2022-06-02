@@ -9,6 +9,7 @@ body {
     background-size: cover;
     height: 800px;
     font-family: 'Nanum Gothic Coding', monospace;
+    background-color: bisque;
 }
 
 
@@ -76,7 +77,7 @@ img {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     align-self: center;
     background-color: rgba(255, 228, 196, 0.707);
     padding: 5px;
