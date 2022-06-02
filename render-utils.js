@@ -103,17 +103,27 @@ function renderWin() {
     const body = document.getElementById('body');
     body.textContent = '';
     const h1 = document.createElement('h1');
+    const credits = document.createElement('button');
     h1.textContent = 'you win!';
+    credits.textContent = 'credits';
+    credits.addEventListener('click', () => {
+        location.replace('../END');
+    });
     body.style.backgroundImage = 'url(../assets/sunrise.jpg)';   
-    body.append(h1);
+    body.append(h1, credits);
 } 
 
 function renderDead() {
     const body = document.getElementById('body');
     body.textContent = '';
     const h1 = document.createElement('h1');
+    const credits = document.createElement('button');
     h1.textContent = 'you die!';
+    credits.textContent = 'credits';
+    credits.addEventListener('click', () => {
+        location.replace('../END');
+    });
     body.style.backgroundImage = 'url(../assets/lose.jpg)';   
-    body.append(h1);
+    body.append(h1, credits);
 } 
 
