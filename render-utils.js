@@ -105,8 +105,13 @@ function renderWin() {
     const h1 = document.createElement('h1');
     h1.classList.add('results');
     h1.textContent = 'You Win💰';
+    const credits = document.createElement('button');
+    credits.textContent = 'credits';
+    credits.addEventListener('click', () => {
+        location.replace('../END');
+    });
     body.style.backgroundImage = 'url(../assets/sunrise.jpg)';   
-    body.append(h1);
+    body.append(h1, credits);
 } 
 
 function renderDead() {
@@ -115,7 +120,12 @@ function renderDead() {
     const h1 = document.createElement('h1');
     h1.textContent = 'You Died☠️';
     h1.classList.add('results');
+    const credits = document.createElement('button');
+    credits.textContent = 'credits';
+    credits.addEventListener('click', () => {
+        location.replace('../END');
+    });
     body.style.backgroundImage = 'url(../assets/lose.jpg)';   
-    body.append(h1);
+    body.append(h1, credits);
 } 
 
