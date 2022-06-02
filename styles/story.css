@@ -17,13 +17,11 @@ body {
 }
 
 #choices {
-    background-color: rgba(255, 228, 196, 0.707);
-    width: 400px;
-    height: 400px;
     display: flex;
+    width: 300px;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 30px;
+    margin-top: 50px;
 }
 
 div {
@@ -46,7 +44,7 @@ div {
 #choice-2 {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
-    align-self: flex-start;
+    align-self: center;
 
 }
 
@@ -54,7 +52,9 @@ section button {
     margin: 5px;
     height: fit-content;
     align-self: center;
-
+    height: 30px;
+    width: 100px;
+    background-color: rgba(255, 228, 196, 0.503)
 }
 
 @keyframes flash {
@@ -67,8 +67,10 @@ img {
 }
 
 h2 {
+    font-size: 30px;
     align-self: flex-start;
     margin-left: 50px;
+    background-color: rgba(255, 228, 196, 0.707);
 }
 
 .story {
@@ -84,17 +86,17 @@ h2 {
 #div-1 {
     background-color: rgba(128, 0, 0, 0.827);
     border-radius: 50px;
-    width: 300px;
+    width: 500px;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 #div-2 {
     background-color: rgba(128, 0, 0, 0.819);
     border-radius: 50px;
-    width: 300px;
+    width: 500px;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 header {
@@ -114,4 +116,8 @@ header {
 
 .hidden {
     display: none;
+}
+
+.character {
+    width: 400px;
 }
