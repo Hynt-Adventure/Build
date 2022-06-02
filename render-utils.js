@@ -103,8 +103,9 @@ function renderWin() {
     const body = document.getElementById('body');
     body.textContent = '';
     const h1 = document.createElement('h1');
+    h1.classList.add('results');
+    h1.textContent = 'You Win💰';
     const credits = document.createElement('button');
-    h1.textContent = 'you win!';
     credits.textContent = 'credits';
     credits.addEventListener('click', () => {
         location.replace('../END');
@@ -117,8 +118,9 @@ function renderDead() {
     const body = document.getElementById('body');
     body.textContent = '';
     const h1 = document.createElement('h1');
+    h1.textContent = 'You Died☠️';
+    h1.classList.add('results');
     const credits = document.createElement('button');
-    h1.textContent = 'you die!';
     credits.textContent = 'credits';
     credits.addEventListener('click', () => {
         location.replace('../END');

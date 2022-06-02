@@ -4,7 +4,10 @@ body {
     grid-template-rows: fit-content fit-content 1fr 1fr;
     align-items: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: 80%; 
+    background-position: center;
+    background-color: rgb(95, 88, 88);
+    height: 70em;
 }
 
 
@@ -69,7 +72,6 @@ img {
 h2 {
     font-size: 30px;
     align-self: flex-start;
-    margin-left: 50px;
     background-color: rgba(255, 228, 196, 0.707);
 }
 
@@ -120,4 +122,17 @@ header {
 
 .character {
     width: 400px;
+}
+
+h1 {
+    font-size: 100px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.results {
+    grid-column: 1/3;
 }
