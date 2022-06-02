@@ -2,41 +2,79 @@
 
 #david {
     font-family: 'Nanum Gothic Coding', monospace;
-    border: 5px black solid;
     margin: 5px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
+    -webkit-text-fill-color: white;    
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    text-align: center;
 }
 
 #amanda {
     font-family: 'Nanum Gothic Coding', monospace;
-    border: 5px black solid;
     margin: 5px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
+    -webkit-text-fill-color: white;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    text-align: center;
 }
 
 #morgan {
     font-family: 'Nanum Gothic Coding', monospace;
-    border: 5px black solid;
     margin: 5px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
+    -webkit-text-fill-color: white;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    text-align: center;
 }
 
 #niki {
     font-family: 'Nanum Gothic Coding', monospace;
-    border: 5px black solid;
     margin: 5px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
+    -webkit-text-fill-color: white;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    text-align: center;
 }
 
 #chad {
     font-family: 'Nanum Gothic Coding', monospace;
-    border: 5px black solid;
     margin: 5px;
+    font-size: 25px;background: -webkit-linear-gradient(rgb(7, 7, 7), rgb(214, 19, 19));
+    -webkit-text-fill-color: white;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Rubik Wet Paint', cursive;
+    font-size: 35px;text-align: center;
+    padding-bottom: 45px;
 }
 
 h3 {
     font-family: 'Rubik Wet Paint', cursive;
-    font-size: 35px;
+    font-size: 55px;
+    color: rgb(185, 48, 48);
+    text-align: center;
 }
 
 .credits {
@@ -44,11 +82,23 @@ h3 {
     justify-content: space-evenly;
 }
 
-#pic {
+.pic {
     border: 5px black solid;
-    border-radius: 50%;
-    height: 175px;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
+    border-radius: 75%;
+    height: 250px;
+    align-content: center;
+}
+
+@keyframes bounce {
+    0% { top: 0px; }
+    50% { top:200px; }
+    100% { top: 0px; }
+}
+
+body {
+    background-color: bisque;
+}
+
+.details {
+    padding-top: 45px;
 }
