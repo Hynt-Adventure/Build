@@ -33,3 +33,22 @@
 h2 {
     font-family: 'Rubik Wet Paint', cursive;
 }
+
+h3 {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 35px;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pic {
+    border: 5px black solid;
+    border-radius: 50%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
