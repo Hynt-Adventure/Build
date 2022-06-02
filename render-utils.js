@@ -27,6 +27,7 @@ export function renderChar(character) {
     const div = document.createElement('div');
     const img = document.createElement('img');
     const h2 = document.createElement('h2');
+    h2.classList.add('name');
 
     img.src = `${character.image}`;
     h2.textContent = character.name;
@@ -55,8 +56,8 @@ export function renderStory(story) {
     const button2 = document.createElement('button');
     button1.value = story.option1_id;
     button2.value = story.option2_id;
-    button1.textContent = 'Choose';
-    button2.textContent = 'Choose';
+    button1.textContent = 'choose';
+    button2.textContent = 'choose';
     if (button2.value === 'null' || '') {
         div_2.classList.add('hidden');
     }
