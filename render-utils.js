@@ -107,6 +107,7 @@ function renderWin() {
     h1.textContent = 'You Win💰';
     const credits = document.createElement('button');
     credits.textContent = 'credits';
+    credits.classList.add('credits');
     credits.addEventListener('click', () => {
         location.replace('../END');
     });
@@ -122,10 +123,10 @@ function renderDead() {
     h1.classList.add('results');
     const credits = document.createElement('button');
     credits.textContent = 'credits';
+    credits.classList.add('credits');
     credits.addEventListener('click', () => {
         location.replace('../END');
     });
     body.style.backgroundImage = 'url(../assets/lose.jpg)';   
     body.append(h1, credits);
 } 
-

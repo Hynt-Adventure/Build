@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Rubik+Wet+Paint&display=swap');
+
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,8 +133,29 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    font-family: 'Rubik Wet Paint', cursive;
 }
 
 .results {
-    grid-column: 1/3;
+    grid-column: 1 / 3;
+}
+
+.credits {
+    width: 200px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    align-self: flex-start;
+    position: relative;
+    margin-top: 10px;
+    font-size: 35px;
+    background-color: rgba(128, 0, 0, 0.885);
+    border: 3px solid black;
+    font-family: 'Nanum Gothic Coding', monospace;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color: rgb(82, 9, 9);
+    
 }
