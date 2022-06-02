@@ -64,6 +64,7 @@ label {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    cursor: pointer;
 }
 
 #btn {
@@ -78,6 +79,10 @@ label {
     bottom: 20px;
 }
 
+#start:hover {
+    cursor: pointer;
+}
+
 #start {
     height: 80px;
     width: 325px;
@@ -88,4 +93,8 @@ label {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+
+.knife:hover {
+    cursor: url('../assets/knife.png'), auto;
 }

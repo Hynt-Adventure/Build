@@ -15,6 +15,7 @@ export function renderCard(character) {
     radioBtn.value = character.id;
     h2.textContent = character.name;
     img.src = character.image;
+    img.classList.add('knife');
     p.textContent = character.bio;
     cardDiv.append(h2, radioBtn, img, p);
     label.append(cardDiv);
