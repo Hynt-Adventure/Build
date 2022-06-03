@@ -14,7 +14,6 @@ async function displayChar() {
     charSection.append(div);
 }
 
-
 window.addEventListener('load', async () => {
     displayChar();
     const init = await getStory(1);
